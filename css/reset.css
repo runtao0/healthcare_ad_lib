@@ -1,0 +1,56 @@
+html, body, header, nav, h1, a, ul, li,
+strong, main, section, img, div, h2, p,
+form, fieldset, label, input, textarea,
+button, article, footer, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: inherit;
+  box-sizing: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  color: inherit;
+  background: transparent;
+  font-weight: inherit;
+  z-index: inherit;
+  line-height: inherit;
+}
+
+ul, li {
+
+  list-style: none;
+  width:auto;
+}
+
+a, button {
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+a:hover, button:hover {
+  color: rgb(56, 55, 55);
+}
+
+body {
+  background: transparent;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  box-sizing: content-box;
+  z-index: 0;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+/*clearfix*/
+.group:after {
+  clear: both;
+  content: "";
+  display: block;
+}
