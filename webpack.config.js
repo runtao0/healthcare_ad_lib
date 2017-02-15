@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './lib/main.js',
+  entry: './lib/main.jsx',
   output: {
     path: './lib',
     filename: 'bundle.js',
@@ -7,18 +7,18 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: [/\.js?$/],
+        test: [/\.jsx?$/],
         exclude: /(node_modules)/,
         loader: 'babel-loader',
         query: {
-          presets: ['es2015']
+          presets: ['react', 'es2015']
         }
       }
     ]
   },
   devtool: 'source-map',
   resolve: {
-    extensions: ['.js']
+    extensions: ['.js', '.jsx']
   },
   // debug: true,
 };
