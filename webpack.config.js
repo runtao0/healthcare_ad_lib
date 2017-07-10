@@ -1,7 +1,7 @@
 module.exports = {
-  entry: './lib/main.jsx',
+  entry: './lib/main.js',
   output: {
-    path: './lib',
+    path: '/Users/runtao/Desktop/healthcare_ad_lib/lib/',
     filename: 'bundle.js',
   },
   module: {
